@@ -23,7 +23,7 @@ export default function HomePage() {
 
         {/* Text */}
         <p className="flex pl-2 text-[#6e7077] items-center">
-          Think, Create, Plan...
+          Think, Plan, Create...
         </p>
 
         {/* Camera Logo */}
