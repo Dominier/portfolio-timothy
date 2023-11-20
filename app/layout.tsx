@@ -1,11 +1,11 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Nunito_Sans } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const nunito_sans = Nunito_Sans({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Timothy Portfolio',
+  title: 'Timothy\'s Portfolio',
   description: 'Computer Science Student',
 }
 
@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={nunito_sans.className}>{children}</body>
     </html>
   )
 }

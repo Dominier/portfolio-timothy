@@ -5,7 +5,7 @@ export default function HomePage() {
     <div className="selection:bg-gray-500 selection:text-[#f1f1f2]">
       {/* Timothy Logo */}
       <div className="w-[100%] p-5">
-        <h1 className="text-5xl font-bold text-center">
+        <h1 className="text-6xl font-semibold text-center">
           Timothy
         </h1>
       </div>
