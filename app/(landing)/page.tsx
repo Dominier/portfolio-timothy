@@ -17,7 +17,7 @@ export default function HomePage() {
           Always open to new opporunities and challenges. Feel free to contact me at my <Link href="mailto: tleprojectcs@gmail.com" className="text-blue-800 underline">email.</Link>
         </p>
         <p className="pt-3">
-          I like to take photos, write code, eat, drink coffee & matcha and go to the gym in my free time. I will be making a <Link href="/blog" className="text-blue-800 underline">blog</Link> in the future where I share my
+          I like to take photos, write code, eat, drink coffee & matcha and go to the gym in my free time. I will be making a <Link href="./blog" className="text-blue-800 underline">blog</Link> in the future where I share my
           life and career experiences. Stay tuned!
         </p>
       </div>
