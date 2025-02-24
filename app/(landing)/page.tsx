@@ -9,7 +9,7 @@ export default function HomePage() {
         <p className="pt-3">
           I am a software engineering student at the University of Irvine.
           I have strong web development skills, but my passion lies in backend enginering.
-          I originally transferred from De Anza College with an Associate's Degree in Computer Science and Mathematics.
+          I originally transferred from De Anza College with an Associate&apos;'s Degree in Computer Science and Mathematics.
           You might find me at your local cafe or library studying or working on a project.
           Feel free to reach out to me if you have any questions or just want to chat!s 
         </p>
