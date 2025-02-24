@@ -1,20 +1,22 @@
 import Image from "next/image"
-import { Avatar, AvatarFallback, AvatarImage } from "./avatar"
+// import { Avatar, AvatarFallback, AvatarImage } from "./avatar"
 import Link from "next/link"
 
 export const NavigationBar = () => {
     return (
-        <div className="pb-32">
+        <div className="pb-16 border justify-between">
+            <div className="text-md float-left p-4 pt-5">
+                <Link href="/" className="pl-2 font-bold hover:underline inline-flex">Timothy</Link>
+                <Link href="/blog" className="pl-5 font-bold  hover:underline inline-flex">Blog</Link>
+                <Link href="https://www.resume.lol/share/ip03pv7" className="pl-5 font-bold hover:underline inline-flex">Resume</Link>
+            </div>
             <div className="text-sm float-right p-4">
-                <a href="mailto: tleprojectcs@gmail.com" className="pr-5 hover:underline">Gmail</a>
-                <a href="https://github.com/Dominier" className="pr-3 hover:underline">GitHub</a>
-                <Link href="" className=" hover:bg-gray-500 hover:opacity-80 rounded-3xl p-2 mr-3">
-                    <Image src="/menutop.svg" alt="3x3 menu" width={17} height={15} className="inline-flex" />
+                <Link href="mailto: tleprojectcs@gmail.com" className="pr-5 inline-flex">
+                    <Image src="/email.svg" alt="email icon" width={30} height={30} />
                 </Link>
-                <Avatar className="inline-flex">
-                    <AvatarImage src="" width={10} height={20} />
-                    <AvatarFallback className="text-black">TL</AvatarFallback>
-                </Avatar>
+                <Link href="https://github.com/Dominier" className="pr-2 inline-flex">
+                    <Image src="/github.svg" alt="github icon" width={30} height={30} />
+                </Link>
             </div>          
         </div>
     )

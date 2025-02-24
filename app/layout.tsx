@@ -6,7 +6,7 @@ const nunito_sans = Nunito_Sans({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Timothy\'s Portfolio',
-  description: 'Computer Science Student',
+  description: 'Software Engineering Student',
 }
 
 export default function RootLayout({

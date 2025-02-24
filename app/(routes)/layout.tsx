@@ -1,3 +1,5 @@
+import { NavigationBar } from "@/components/ui/navbar";
+
 const DashboardLayout = ({
     children
 }: {
@@ -5,6 +7,7 @@ const DashboardLayout = ({
 }) => {
     return (
         <div>
+            <NavigationBar />
             {children}
         </div>
     );

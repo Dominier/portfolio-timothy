@@ -1,87 +1,74 @@
 import Image from "next/image";
-import { 
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { NavigationBar } from "@/components/ui/navbar";
+import Link from "next/link";
 
 export default function HomePage() {
   return (
-    <div className="selection:bg-gray-500 selection:text-[#f1f1f2]">
-      <NavigationBar />
-      {/* Timothy Logo */}
-      <div className="w-[100%] p-5">
-        <h1 className="text-7xl font-semibold text-center drop-shadow-lg">
-          Timothy
-        </h1>
-      </div>
-
-      {/* Search bar */}
-      <div className="flex m-5 rounded-3xl w-[60%] h-[40px] bg-[#f1f1f2] ml-auto mr-auto pl-3 pr-3 shadow-lg">
-        {/* Search Logo */}
-        <Image 
-          src='/search.svg'
-          width={18}
-          height={18}
-          alt="search icon"
-        />
-
-        {/* Text */}
-        <p className="flex pl-2 text-[#6e7077] items-center">
-          Think, Plan, Create...
+    <div className="p-5">
+      <div className="text-md ml-5 mr-5 justify-center">
+        <h1 className="text-2xl">Hello! I am Timothy (Feel free to call me Tim)</h1>
+        <p className="pt-3">
+          I am a software engineering student at the University of Irvine.
+          I have strong web development skills, but my passion lies in backend enginering.
+          I originally transferred from De Anza College with an Associate's Degree in Computer Science and Mathematics.
+          You might find me at your local cafe or library studying or working on a project.
+          Feel free to reach out to me if you have any questions or just want to chat!s 
         </p>
-
-        {/* Camera Logo */}
-        <Image 
-          src='/camera.svg'
-          width={18}
-          height={18}
-          alt="camera icon"
-          className="relative ml-auto"
-        />
-
+        <p className="pt-3">
+          Always open to new opporunities and challenges. Feel free to contact me at my <Link href="mailto: tleprojectcs@gmail.com" className="text-blue-800 underline">email.</Link>
+        </p>
+        <p className="pt-3">
+          I like to take photos, write code, eat, drink coffee & matcha and go to the gym in my free time. I will be making a <Link href="/blog" className="text-blue-800 underline">blog</Link> in the future where I share my
+          life and career experiences. Stay tuned!
+        </p>
+      </div>
+      
+      <div className="pt-12 ml-5 mr-5 space-y-5">
+        <h1 className="text-2xl">Experience</h1>
+        <div className="flex justify-between">
+          <span>Software Engineering Intern at Uber</span>
+          <span>Jun 2024 to Sep 2024</span>
+        </div>
+        <div className="flex justify-between">
+          <span>Undergraduate Researcher at UC Berkeley</span>
+          <span>Aug 2023 to Present</span>
+        </div>
+        <div className="flex justify-between">
+          <span>Software Engineering Intern at Open Energy Dashboard</span>
+          <span>Nov 2023 to Dec 2023</span>
+        </div>
+        <div className="flex justify-between">
+          <span>President at Google Developer Student Club</span>
+          <span>Aug 2023 to Jun 2024</span>
+        </div>
+        <div className="flex justify-between">
+          <span>Software Engineering Intern at Refer Me</span>
+          <span>May 2023 to Aug 2023</span>
+        </div>
       </div>
 
-      {/* List of Projects Icons */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-[55%] ml-auto mr-auto border border-white ">
-        <Card className="w-[80%] bg-[#35363A] text-[#f1f1f2] hover:bg-[#505258] transition ease-in-out duration-300">
-          <CardContent>
-            IMAGE
-          </CardContent>
-          <CardFooter>
-            Project 1
-          </CardFooter>
-        </Card>
-        <Card className="w-[80%] bg-[#35363A] text-[#f1f1f2] hover:bg-[#505258] transition ease-in-out duration-300">
-          <CardContent>
-            IMAGE
-          </CardContent>
-          <CardFooter>
-            Project 1
-          </CardFooter>
-        </Card>
-        <Card className="w-[80%] bg-[#35363A] text-[#f1f1f2] hover:bg-[#505258] transition ease-in-out duration-300">
-          <CardContent>
-            IMAGE
-          </CardContent>
-          <CardFooter>
-            Project 1
-          </CardFooter>
-        </Card>
-        <Card className="w-[80%] bg-[#35363A] text-[#f1f1f2] hover:bg-[#505258] transition ease-in-out duration-300">
-          <CardContent>
-            IMAGE
-          </CardContent>
-          <CardFooter>
-            Project 1
-          </CardFooter>
-        </Card>
+      <div className="pt-12 ml-5 mr-5 space-y-5">
+        <h1 className="text-2xl">Education & Organizations</h1>
+        <div className="flex justify-between">
+          <span>University of California, Irvine</span>
+          <span>Sep 2024 to Present</span>
+        </div>
+        <div className="flex justify-between">
+          <span>De Anza College</span>
+          <span>Sep 2022 to Jun 2024</span>
+        </div>
+        <div className="flex justify-between">
+          <span>SHPE Member</span>
+          <span>Oct 2024 to Present</span>
+        </div>
+        <div className="flex justify-between">
+          <span>CodePath - Advanced Technical Interview Prep</span>
+          <span>Issued Aug 2024</span>
+        </div>
+        <div className="flex justify-between">
+          <span>Computing Talent Initative</span>
+          <span>Mar 2023 to Dec 2023</span>
+        </div>
       </div>
-
 
     </div>
   )
