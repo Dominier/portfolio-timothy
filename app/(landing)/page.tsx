@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function HomePage() {
   return (
-    <div className="p-5 selection:text-yellow-500 selection:bg-[#76624a]">
+    <div className="p-16 selection:text-yellow-500 selection:bg-[#76624a]">
       <div className="text-md ml-5 mr-5 justify-center">
         <h1 className="text-2xl">Hello! I am Timothy (Feel free to call me Tim)</h1>
         <p className="pt-3">

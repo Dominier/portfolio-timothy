@@ -3,7 +3,7 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter }
 export default function MatchaBlogPage() {
   return (
     <div className="">
-        <div className="p-20 space-y-5">
+        <div className="p-16 space-y-5">
           <h1 className="text-2xl"> My reviews of matcha; updates whenever i feel like it.</h1>
           <Card className="bg-green-200">
             <CardHeader>

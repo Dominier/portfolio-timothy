@@ -5,7 +5,7 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter }
 
 export default function BlogPage() {
   return (
-    <div className="p-20 space-y-5">
+    <div className="p-16 space-y-5">
         <div className="text-center justify-center align-middle">
             Coming soon... (still not sure what I am making yet!)
         </div>
@@ -13,7 +13,7 @@ export default function BlogPage() {
           <Link href="/blog/matcha">
             <Card className="bg-green-300">
               <CardHeader>
-                <CardTitle>Matcha Reviews</CardTitle>
+                <CardTitle>Matcha reviews</CardTitle>
                 <CardDescription>My silly reviews of matcha places I have tried.</CardDescription>
               </CardHeader>
             </Card>
