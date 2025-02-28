@@ -11,7 +11,7 @@ export default function BlogPage() {
         </div>
         <div>
           <Link href="/blog/matcha">
-            <Card className="bg-green-300">
+            <Card className="bg-green-300 transform transition duration-300 hover:scale-105">
               <CardHeader>
                 <CardTitle>Matcha reviews</CardTitle>
                 <CardDescription>My silly reviews of matcha places I have tried.</CardDescription>
@@ -21,7 +21,7 @@ export default function BlogPage() {
         </div>
         <div>
           <Link href="/blog">
-            <Card className="bg-gray-400">
+            <Card className="bg-gray-400 transform transition duration-300 hover:scale-105 hover:cursor-not-allowed">
               <CardHeader>
                 <CardTitle>Engineering blog</CardTitle>
                 <CardDescription>Coming soon...</CardDescription>

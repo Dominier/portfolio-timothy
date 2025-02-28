@@ -5,7 +5,7 @@ export default function MatchaBlogPage() {
     <div className="">
         <div className="p-16 space-y-5">
           <h1 className="text-2xl"> My reviews of matcha; updates whenever i feel like it.</h1>
-          <Card className="bg-green-200">
+          <Card className="bg-green-300">
             <CardHeader>
               <CardTitle>Kei Coffee House</CardTitle>
               <CardDescription>oh yeah this one is a banger. great matcha flavour in the matcha latte, banana matcha latte, and strawberry matcha latte</CardDescription>
@@ -14,25 +14,25 @@ export default function MatchaBlogPage() {
               <p>Rating: BOOM BOOM BOOM BOOM BOom</p>
             </CardContent>
           </Card>
-          <Card className="bg-green-200">
+          <Card className="bg-green-300">
             <CardHeader>
               <CardTitle>Airoma Cafe</CardTitle>
               <CardDescription>i think i got the wrong thing? banana matcha latte was okay but I need to come back and regrade</CardDescription>
             </CardHeader>
             <CardContent>
-              <p>Rating: BOOM BOOM boom</p>
+              <p>Rating: 6/10</p>
             </CardContent>
           </Card>
-          <Card className="bg-green-200">
+          <Card className="bg-green-300">
             <CardHeader>
               <CardTitle>Mugs</CardTitle>
               <CardDescription>this is not a banger and i know bangers. i got the blueberry matcha. matcha flavour was weak</CardDescription>
             </CardHeader>
             <CardContent>
-              <p>Rating: boom boom boom</p>
+              <p>Rating: 5/10</p>
             </CardContent>
           </Card>
-          <Card className="bg-green-200">
+          <Card className="bg-green-300">
             <CardHeader>
               <CardTitle>Stereoscope</CardTitle>
               <CardDescription>amazing and fresh strawberry matcha, would come back again!!! has long lines sometimes</CardDescription>
@@ -41,13 +41,13 @@ export default function MatchaBlogPage() {
               <p>Rating: BOOM BOOM BOOM BOOM BOOM</p>
             </CardContent>
           </Card>
-          <Card className="bg-green-200">
+          <Card className="bg-green-300">
             <CardHeader>
               <CardTitle>SIP Coffee</CardTitle>
               <CardDescription>photogenic strawberry matcha that comes with a pockey. this one is delicious</CardDescription>
             </CardHeader>
             <CardContent>
-              <p>Rating: BOOM BOOM BOOM BOOM BOom</p>
+              <p>Rating: 9/10</p>
             </CardContent>
           </Card>
         </div>
