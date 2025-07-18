@@ -57,7 +57,7 @@ export default function MatchaBlogPage() {
 
           <Card className="bg-green-300">
             <CardHeader>
-              <CardTitle>Community's Goods</CardTitle>
+              <CardTitle>Community&apos;s Goods</CardTitle>
               <CardDescription>great matcha latte, wish I got it fresh</CardDescription>
             </CardHeader>
             <CardContent>
@@ -67,11 +67,11 @@ export default function MatchaBlogPage() {
 
           <Card className="bg-green-300">
             <CardHeader>
-              <CardTitle>Taty's Specialty Coffee & Tea</CardTitle>
+              <CardTitle>Taty&apos;s Specialty Coffee & Tea</CardTitle>
               <CardDescription>my favorite spot by far. insane banana matcha with fantastic crunchy toppings and great double matcha latte</CardDescription>
             </CardHeader>
             <CardContent>
-              <p>Rating: 10/10 and 5 hip hip horray's!</p>
+              <p>Rating: 10/10 and 5 hip hip horray&apos;s!</p>
             </CardContent>
           </Card>
           
