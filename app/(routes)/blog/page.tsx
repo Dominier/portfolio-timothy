@@ -21,7 +21,7 @@ export default function BlogPage() {
         </div>
         <div>
           <Link href="/blog/web">
-            <Card className="bg-gray-400 transform transition duration-300 hover:scale-105">
+            <Card className="bg-slate-300 transform transition duration-300 hover:scale-105">
               <CardHeader>
                 <CardTitle>Getting started with frontend engineering</CardTitle>
                 <CardDescription>Advice for those with a background of software engineering</CardDescription>

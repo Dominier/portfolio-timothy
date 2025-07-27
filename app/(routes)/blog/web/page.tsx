@@ -2,46 +2,130 @@ import Link from "next/link";
 
 export default function WebPage() {
   return (
-    <div className="p-16 selection:text-yellow-500 selection:bg-[#76624a]">
-      <div className="text-md ml-5 mr-5 justify-center">
-        <h1 className="text-2xl font-bold">This is a learning guide for those interested in web development</h1>
-        <p className="pt-3">
-          I have received many questions about how to get started with web development, so I decided to write this guide.
-          Those who reached out have experience with software engineering, so this guide is tailored for both beginners and those with a background in software engineering.
-          This is my first time writing a blog post. If there are any feedback or suggestions, please let me know!
+    <main className="min-h-screen p-4 sm:p-8 lg:p-12 selection:text-yellow-400 selection:bg-[#76624a]">
+      
+      {/* Card */}
+      <div className="max-w-4xl mx-auto rounded-xl shadow-lg p-6 sm:p-8 md:p-12">
+        
+        {/* Page Header */}
+        <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 tracking-tight">
+          Frontend Engineering: A Comprehensive Guide
+        </h1>
+        <p className="mt-4 text-lg text-gray-600 leading-relaxed">
+          Frontend engineering focuses on building the <strong className="font-semibold text-gray-800">user interface</strong> and <strong className="font-semibold text-gray-800">user experience</strong> of websites and web applications. It&apos;s the part you directly interact with, from buttons and forms to layouts and animations. This guide will explore the key aspects of this dynamic field.
         </p>
-        <h2 className="text-2xl pt-10">Core Foundations</h2>
-        <p className="pt-3">
-            Your first step is to master the three fundamental languages of the web. Those with a background in software engineering may find JavaScript familiar, but don&apos;t underestimate CSS—it&apos;s often the biggest hurdle for those used to pure logic.
-        </p>
-        <p className="pt-3">
-            HTML (The Structure): This is the skeleton of a webpage. It&apos;s not a programming language but a markup language. Focus on semantic HTML. Using the correct tags for the right purpose (e.g., &lt;nav&gt;, &lt;main&gt;, &lt;button&gt;). This is crucial for accessibility and SEO.
-        </p>
-        <p className="pt-3">
-            CSS (The Style): This is how you make a webpage look good. It controls colors, fonts, layouts, and animations. This will feel very different from backend development.
 
-Key Concepts: The box model, specificity, Flexbox, and CSS Grid. Flexbox and Grid are non-negotiable for modern layout design.
+        <div className="border-t my-12"></div>
+
+        {/* Core Technologies Section */}
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-800">
+          Core Technologies
+        </h2>
+        <p className="mt-4 mb-6 text-gray-700 text-base md:text-lg">
+          At its heart, frontend development relies on three fundamental languages:
         </p>
-        <p className="pt-3">
-            JavaScript (The Interactivity): This is where your backend skills shine. JavaScript is the programming language of the browser. You&apos;ll use it to handle user interactions, manipulate the page, and communicate with your backend.
-            Key Concepts: The DOM (Document Object Model) is the most important concept. It&apos;s the API for the HTML document. You also need to master asynchronous JavaScript (async/await, Promises) for fetching data.
+        <ul className="list-disc pl-5 space-y-4 text-gray-700 text-base md:text-lg">
+          <li>
+            <strong className="font-semibold text-gray-900">HTML (HyperText Markup Language):</strong> Provides the <strong className="font-semibold">structure</strong> and content of a web page. Think of it as the skeleton.
+          </li>
+          <li>
+            <strong className="font-semibold text-gray-900">CSS (Cascading Style Sheets):</strong> Handles the <strong className="font-semibold">presentation</strong> and styling of the HTML. This is where you define colors, fonts, layouts, and responsiveness.
+          </li>
+          <li>
+            <strong className="font-semibold text-gray-900">JavaScript (JS):</strong> Adds <strong className="font-semibold">interactivity</strong> and dynamic behavior to the web page. It allows you to manipulate the HTML and CSS, handle events, and make asynchronous requests.
+          </li>
+        </ul>
+        <p className="mt-6 text-gray-700 text-base md:text-lg">
+            These three work together to create a functional and visually appealing web experience.
         </p>
-        <h2 className="text-2xl pt-10">Frameworks and Libraries</h2>
-        <p className="pt-3">
-            Once you have a solid grasp of the basics, you&apos;ll need to learn a modern framework. These tools provide structure, manage application &quot;state&quot; (data), and make building complex UIs much more efficient.
-            Start with React. It has the largest market share, a massive community, and tons of resources. Your understanding of functions and data flow from the backend will map nicely to React&apos;s component-based model.
+
+        <div className="border-t my-12"></div>
+        
+        {/* Essential Skills Section */}
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-800">
+          Essential Skills
+        </h2>
+        <p className="mt-4 mb-6 text-gray-700 text-base md:text-lg">
+            Beyond the core technologies, successful frontend engineers possess a range of skills:
         </p>
-        <h2 className="text-2xl pt-10">Resources</h2>
-        <p className="pt-3">
-            <Link href="https://developer.mozilla.org/" className="text-blue-800 hover:underline">MDN Web Docs</Link> is the absolute best reference for HTML, CSS, and JavaScript. It&apos;s your bible.
+        <ul className="list-disc pl-5 space-y-4 text-gray-700 text-base md:text-lg">
+          <li><strong>Responsive Design:</strong> Creating websites that adapt seamlessly to different screen sizes and devices.</li>
+          <li><strong>UI/UX Principles:</strong> Understanding user interface and user experience principles to design intuitive interfaces.</li>
+          <li><strong>Frontend Frameworks and Libraries:</strong> Using tools like React, Angular, or Vue.js to build complex applications efficiently.</li>
+          <li><strong>Performance Optimization:</strong> Ensuring the website loads quickly and runs smoothly.</li>
+          <li><strong>Browser Developer Tools:</strong> Proficiently using browser tools for debugging, inspecting, and analysis.</li>
+          <li><strong>Accessibility (A11y):</strong> Building websites that are usable by people with disabilities.</li>
+        </ul>
+
+        <div className="border-t my-12"></div>
+
+        {/* Workflow Section */}
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-800">
+          The Frontend Development Workflow
+        </h2>
+        <p className="mt-4 mb-6 text-gray-700 text-base md:text-lg">
+          A typical frontend development workflow might involve these steps:
         </p>
-        <p>
-            <Link href="https://www.freecodecamp.org" className="text-blue-800 hover:underline">freeCodeCamp</Link> has excellent, interactive certifications on &quot;Responsive Web Design&quot; and &quot;JavaScript Algorithms and Data Structures.&quot;
+        <ol className="list-decimal pl-5 space-y-4 text-gray-700 text-base md:text-lg">
+          <li><strong>Understanding Requirements:</strong> Collaborating with designers, product managers, and backend developers.</li>
+          <li><strong>Planning and Architecture:</strong> Designing the structure and organization of the frontend codebase.</li>
+          <li><strong>Building the UI:</strong> Writing HTML, CSS, and JavaScript code to create the user interface.</li>
+          <li><strong>Adding Functionality:</strong> Implementing the interactive elements and business logic.</li>
+          <li><strong>Deployment:</strong> Deploying the frontend application to a web server.</li>
+          <li><strong>Maintenance and Updates:</strong> Addressing bugs, adding new features, and keeping the codebase up to date.</li>
+        </ol>
+        
+        <div className="border-t my-12"></div>
+        
+        {/* Getting Started Section */}
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-800">
+          Getting Started
+        </h2>
+        <p className="mt-4 mb-6 text-gray-700 text-base md:text-lg">
+          If you&apos;re interested in becoming a frontend engineer, here are some steps you can take:
         </p>
-        <p>
-            <Link href="https://react.dev" className="text-blue-800 hover:underline">The Official React Docs</Link> is fantastic, with interactive examples and tutorials. Start here.
+        <ol className="list-decimal pl-5 space-y-4 text-gray-700 text-base md:text-lg">
+            <li><strong>Learn the Basics:</strong> Start with HTML, CSS, and JavaScript. Numerous online resources, tutorials, and courses are available.</li>
+            <li><strong>Practice Regularly:</strong> Build small projects to apply what you learn and solidify your understanding.</li>
+            <li><strong>Explore Frameworks and Libraries:</strong> Once you have a good grasp of the fundamentals, start learning a popular framework like React, Angular, or Vue.js.</li>
+            <li><strong>Contribute to Open Source:</strong> Contributing to open source projects is a great way to learn from experienced developers and build your portfolio.</li>
+            <li><strong>Build a Portfolio:</strong> Showcase your projects and skills through a personal website or online portfolio.</li>
+            <li><strong>Network:</strong> Connect with other developers through online communities, meetups, and conferences.</li>
+        </ol>
+        <p className="mt-8 text-gray-700 text-base md:text-lg">
+          Frontend engineering is a rewarding and challenging field that offers many opportunities. By mastering the core technologies, developing essential skills, and staying curious, you can build compelling and engaging web experiences for users around the world.
         </p>
+
+        <div className="border-t my-12"></div>
+
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-800">
+          Helpful Resources
+        </h2>
+        <p className="mt-4 mb-6 text-gray-700 text-base md:text-lg">
+          Here are some of the best places to learn and reference information on your journey:
+        </p>
+
+        <ul className="list-disc pl-5 space-y-4 text-gray-700 text-base md:text-lg">
+          <li>
+            <a href="https://developer.mozilla.org/en-US/" target="_blank" rel="noopener noreferrer" className="font-medium text-blue-600 hover:text-blue-800 hover:underline">
+              MDN Web Docs
+            </a>
+            : The ultimate resource for HTML, CSS, and JavaScript. Consider this your primary reference.
+          </li>
+          <li>
+            <a href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer" className="font-medium text-blue-600 hover:text-blue-800 hover:underline">
+              freeCodeCamp
+            </a>
+            : Offers excellent, free, and interactive certifications covering everything from responsive design to advanced JS concepts.
+          </li>
+          <li>
+            <a href="https://react.dev/" target="_blank" rel="noopener noreferrer" className="font-medium text-blue-600 hover:text-blue-800 hover:underline">
+              The Official React Docs
+            </a>
+            : The new documentation is fantastic, with interactive examples and clear tutorials. The best place to learn React.
+          </li>
+        </ul>
       </div>
-    </div>
-  )
+    </main>
+  );
 }
